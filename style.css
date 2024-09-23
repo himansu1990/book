@@ -1,0 +1,93 @@
+.navbar-collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3e4149;
+  }
+  .navbar-toggler,
+  .navbar-brand {
+    z-index: 1;
+  }
+  .navbar-brand {
+    font-size: 1.8em;
+    color: #3e4149;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-collapse .nav-link {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+  .navbar-collapse .nav-link:hover,
+  .navbar-collapse .nav-link.active {
+    color: darkseagreen;
+  }
+  .nav-item:not(:last-child) {
+    border-bottom: 1px solid gray;
+    padding: 0.2em 4em;
+  }
+  .navbar-toggler{
+    background-color: #3e4149;
+  }
+  @media screen and (min-width: 768px) {
+    .nav-item:not(:last-child) {
+      padding: 0.5em 8em;
+    }
+  }
+  .navbar-collapse.show {
+    transition: all 0.5s;
+  }
+  
+  .hero-section {
+    /* background: url("../img/books-bcg.jpg")
+      no-repeat; */
+    /* background-size: cover;
+    height: 100vh; */
+    width: 100%;
+    margin: 100px auto 0 0;
+  }
+  /* search bar */
+  .box{
+    position: relative;
+}
+
+.input {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: none;
+    border: 4px solid #ffd52d;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #ffd52d;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: auto;
+    background: #ffffff;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #ffd52d;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
